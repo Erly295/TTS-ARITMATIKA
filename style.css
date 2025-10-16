@@ -1,0 +1,256 @@
+body {
+    background: linear-gradient(135deg, #f3e7ff, #fce7f3, #dbeafe);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #7e22ce;
+}
+
+.player-card {
+    transition: all 0.3s;
+    border: 3px solid transparent;
+}
+
+.player-card.active {
+    border-color: #9333ea;
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
+}
+
+.player-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.bg-blue-custom {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+}
+
+.bg-pink-custom {
+    background: linear-gradient(135deg, #f9a8d4, #ec4899);
+}
+
+.timer-warning {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.path-container {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.path-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.start-box,
+.finish-box,
+.answer-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.start-box {
+    border-radius: 50%;
+}
+
+.start-box.blue {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    border-color: #2563eb;
+    color: white;
+}
+
+.start-box.pink {
+    background: linear-gradient(135deg, #f9a8d4, #ec4899);
+    border-color: #db2777;
+    color: white;
+}
+
+.finish-box {
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-color: #d97706;
+    color: white;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.arrow-symbol {
+    font-size: 2.5rem;
+    color: #6b7280;
+    line-height: 1;
+}
+
+.operation-badge {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    min-width: 50px;
+    text-align: center;
+}
+
+.operation-badge.hidden-op {
+    background: linear-gradient(135deg, #9ca3af, #6b7280);
+}
+
+.answer-box {
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.4rem;
+}
+
+.answer-box.blue {
+    border-color: #60a5fa;
+}
+
+.answer-box.pink {
+    border-color: #f9a8d4;
+}
+
+.answer-box.filled.blue {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color: #1e40af;
+}
+
+.answer-box.filled.pink {
+    background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+    color: #9f1239;
+}
+
+.answer-box.selected {
+    border-width: 6px !important;
+    border-color: #9333ea !important;
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
+    transform: scale(1.05);
+}
+
+.answer-box:not(.disabled):hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.answer-box.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.empty-box {
+    font-size: 2rem;
+    color: #d1d5db;
+}
+
+.keypad-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #60a5fa, #2563eb);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.keypad-btn:hover {
+    transform: scale(1.1);
+}
+
+.keypad-btn:active {
+    transform: scale(0.95);
+}
+
+.keypad-btn.clear-btn {
+    background: linear-gradient(135deg, #f87171, #dc2626);
+    font-size: 1.2rem;
+}
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+.bounce-animation {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.winner-crown {
+    font-size: 4rem;
+    animation: bounce 2s infinite;
+}
+
+.start-emoji {
+    font-size: 1.8rem;
+}
+
+.start-value {
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+.finish-trophy {
+    font-size: 2rem;
+}
+
+.finish-text {
+    font-size: 0.7rem;
+    margin-top: 2px;
+}

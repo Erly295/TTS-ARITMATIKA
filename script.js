@@ -17,7 +17,6 @@ const challenges = [
   "🍬 Ambil 2 permen berwarna hijau dan merah",
   "👑 Jadi “Raja/Ratu Permen” — bebas kasih perintah ringan ke 1 pemain",
   "Lawan harus kasih kamu pujian lebay (“Kamu jenius banget sumpah!”)",
-  "🐶 Tiru suara hewan favoritmu!",
   "Lawan harus nari atau bergaya lucu di depan kamu 5 detik",
   "📣 Lawan wajib teriak “kamu keren banget!” sambil tepuk tangan",
   "😄 Senyum lebar ke kamera!",

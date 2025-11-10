@@ -253,7 +253,7 @@ function handleWrongAnswer() {
   answer = "";
   document.getElementById("answerInput").value = "";
 
-  showFeedbackModal("error", "😅 Ups!", randomPunishment);
+  showFeedbackModal("error", "😅 Ups!Salah", randomPunishment);
   updateUI();
 }
 

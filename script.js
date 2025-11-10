@@ -14,22 +14,22 @@ let feedbackModalInstance, winnerModalInstance;
 
 const challenges = [
   "🍬 Makan 1 permen!",
-  "🦘 Lompat 5 kali!",
-  "👏 Tepuk tangan 3 kali!",
-  "🏃‍♂️ Berlari kecil di tempat 10 detik!",
+  "🍬 Ambil 2 permen berwarna hijau dan merah",
+  "👑 Jadi “Raja/Ratu Permen” — bebas kasih perintah ringan ke 1 pemain",
+  "Lawan harus kasih kamu pujian lebay (“Kamu jenius banget sumpah!”)",
   "🐶 Tiru suara hewan favoritmu!",
-  "🎵 Nyanyi 'Twinkle Little Star' 1 baris!",
-  "🤸 Regangkan badanmu!",
+  "Lawan harus nari atau bergaya lucu di depan kamu 5 detik",
+  "📣 Lawan wajib teriak “kamu keren banget!” sambil tepuk tangan",
   "😄 Senyum lebar ke kamera!",
 ];
 
 const punishments = [
-  "😵 Putar badan 3 kali!",
-  "😂 Tertawa pura-pura 5 detik!",
-  "💪 Ucapkan 'Saya akan lebih teliti!' dengan semangat!",
-  "🎭 Buat ekspresi wajah lucu!",
-  "🎤 Nyanyikan lagu favoritmu 5 detik!",
-  "🤪 Lidah keluar 3 detik!",
+  "🎶 Nyanyi lagu anak-anak dengan gaya penyanyi profesional",
+  "🕺 Lakukan gerakan aneh pilihan pemain lain selama 10 detik",
+  "📷 Pose lucu dan biarkan orang lain ambil foto",
+  "🐸 Ucapkan kata motivasi konyol dengan suara paling anehmu",
+  "😝 Makan permen tanpa tangan (gunakan mulut langsung dari meja)",
+  "💬 Pura-pura jadi pembawa acara selama 15 detik (“Selamat datang di acara…”)",
   "🙈 Tutup mata dan hitung mundur dari 10!",
 ];
 
